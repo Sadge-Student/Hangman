@@ -339,7 +339,7 @@ bool DownloadWordList()
 {
     // downloads required word list file from my github, however if you wish you could also create your own custom list once it is named "wordlist.txt" and contains a minimum of 10 words
     std::cout << "Missing word list attempting to download..." << std::endl;
-    HRESULT hr = URLDownloadToFile(0, L"https://raw.githubusercontent.com/Sadge-Student/wordlist/main/wordlist.txt", L"wordlist.txt", 0, NULL);
+    HRESULT hr = URLDownloadToFile(0, L"https://raw.githubusercontent.com/Sadge-Student/Hangman/main/wordlist.txt", L"wordlist.txt", 0, NULL);
 
 	if (hr == S_OK) // page returns correctly
     {
